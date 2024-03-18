@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+h1 {
+  font-family: "Frank Ruhl Libre", serif;
+  color: rgb(100, 66, 120);
+  font-size: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  font-family: "Frank Ruhl Libre", serif;
+  color: rgb(100, 66, 120);
+  font-size: 24px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.display-flex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.gap-s {
+  gap: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.gap-base {
+  gap: 16px;
 }
+
+.gap-m {
+  gap: 24px;
+}
+
+.gap-l {
+  gap: 32px;
+}
+
+.background-neutal-0 {
+  background-color: #fff;
+}
+
+.background-neutal-1 {
+  background-color: #ecf0f1;
+}
+
+.background-neutal-2 {
+  background-color: #c9caca;
+}
+
+.background-neutal-3 {
+  background-color: #7f8c8d;
+}
+
+.btn {
+  background-color: rgb(100, 66, 120);
+  padding: 8px;
+  color: #fff;
+  font-weight: 600;
+}
+.btn:hover {
+  background-color: #7f8c8d;
+  cursor: pointer;
+}
+
+.card {
+  position: relative;
+  max-width: 100%;
+  width: 250px;
+  min-width: 250px;
+  min-height: 350px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12);
+  border: 1px solid #ecf0f1;
+  padding: 16px;
+}
+.card .card-header {
+  margin-bottom: 16px;
+  border-bottom: 1px solid #c9caca;
+}
+.card .card-main:hover {
+  opacity: 0.7;
+}
+.card .card-info {
+  position: absolute;
+  top: -8px;
+  right: 16px;
+  background-color: #5D98C3;
+  padding: 8px;
+  font-size: 9px;
+  border-radius: 5px;
+  font-weight: 700;
+  display: none;
+}
+.card:hover {
+  background-color: #B29AB9;
+  cursor: pointer;
+}
+.card:hover .card-header, .card:hover .card-main, .card:hover h1, .card:hover h2, .card:hover h3, .card:hover p {
+  color: #fff;
+}
+
+.card.show-info .card-info {
+  display: block;
+}/*# sourceMappingURL=master-style.css.map */

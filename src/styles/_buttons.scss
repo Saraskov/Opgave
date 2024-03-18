@@ -1,0 +1,11 @@
+.btn {
+    background-color: $color-primary;
+    padding: $space-s;
+    color: $color-neutral-0;
+    font-weight: 600;
+
+    &:hover{
+        background-color: $color-neutral-3;
+        cursor: pointer;
+    }
+}

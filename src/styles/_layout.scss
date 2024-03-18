@@ -1,0 +1,32 @@
+
+// Flex box styles
+.display-flex {
+    display: flex;
+}
+
+.gap-s {
+    gap: $space-s;
+}
+.gap-base {
+    gap: $space-base;
+}
+.gap-m {
+    gap: $space-m;
+}
+.gap-l {
+    gap: $space-l;
+}
+
+// Color styles
+.background-neutal-0{
+    background-color: $color-neutral-0;
+}
+.background-neutal-1{
+    background-color: $color-neutral-1;
+}
+.background-neutal-2{
+    background-color: $color-neutral-2;
+}
+.background-neutal-3{
+    background-color: $color-neutral-3;
+}
